@@ -1,0 +1,42 @@
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: InitConfiguration
+nodeRegistration:
+  kubeletExtraArgs:
+    cloud-provider: "azure"
+    cloud-config: "/etc/kubernetes/cloud.conf"
+
+---
+
+apiVersion: kubeadm.k8s.io/v1beta1
+kind: ClusterConfiguration
+kubernetesVersion: v1.14.0
+certificatesDir: /etc/kubernetes/pki
+clusterName: kubernetes
+controlPlaneEndpoint: ""
+dns:
+  type: CoreDNS
+etcd:
+  local:
+    dataDir: /var/lib/etcd
+imageRepository: k8s.gcr.io
+apiServer:
+  extraArgs:
+    cloud-provider: "azure"
+    cloud-config: "/etc/kubernetes/cloud.conf"
+  extraVolumes:
+  - name: "cloud"
+    hostPath: "/etc/kubernetes/cloud.conf"
+    mountPath: "/etc/kubernetes/cloud.conf"
+controllerManager:
+  extraArgs:
+    cloud-provider: "azure"
+    cloud-config: "/etc/kubernetes/cloud.conf"
+  extraVolumes:
+  -  name: "cloud"
+    hostPath: "/etc/kubernetes/cloud.conf"
+    mountPath: "/etc/kubernetes/cloud.conf"
+networking:
+  dnsDomain: cluster.local
+  podSubnet: ""
+  serviceSubnet: 10.96.0.0/12
+scheduler: {}

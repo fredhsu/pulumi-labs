@@ -1,0 +1,18 @@
+{
+    "cloud":"AzurePublicCloud",
+    "tenantId": "0000000-0000-0000-0000-000000000000",
+    "aadClientId": "0000000-0000-0000-0000-000000000000",
+    "aadClientSecret": "0000000-0000-0000-0000-000000000000",
+    "subscriptionId": "0000000-0000-0000-0000-000000000000",
+    "resourceGroup": "<name>",
+    "location": "eastus",
+    "subnetName": "<name>",
+    "securityGroupName": "<name>",
+    "vnetName": "<name>",
+    "vnetResourceGroup": "",
+    "routeTableName": "<name>",
+    "primaryAvailabilitySetName": "<name>",
+    "cloudProviderBackoff": false,
+    "useManagedIdentityExtension": false,
+    "useInstanceMetadata": true
+}

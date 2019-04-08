@@ -1,0 +1,3 @@
+name: sp-test
+runtime: nodejs
+description: Testing building a service principal
