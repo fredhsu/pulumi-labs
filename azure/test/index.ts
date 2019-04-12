@@ -168,6 +168,7 @@ function createVM(loc : String, netintf: azure.network.NetworkInterface, rg : az
         },
         tags: {
             environment: "demo",
+            autostop: "no",
         },
         vmSize: "Standard_B1s",
     });
