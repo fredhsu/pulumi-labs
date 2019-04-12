@@ -1,0 +1,3423 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2019-03-21T13:56:54.129098-07:00",
+            "magic": "32e50df90d879ab7b4f6f1576bfe6ff784cbedcdfe57c9763f879fd27fd8af3e",
+            "version": "v0.17.2",
+            "plugins": [
+                {
+                    "name": "azure",
+                    "path": "/Users/fredlhsu/.pulumi/plugins/resource-azure-v0.17.3/pulumi-resource-azure",
+                    "type": "resource",
+                    "version": "0.17.3"
+                }
+            ]
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "outputs": {
+                    "ips": [
+                        "168.61.170.195",
+                        "52.168.12.57",
+                        "40.78.2.46",
+                        "23.100.78.255",
+                        "23.101.59.88",
+                        "40.74.74.193",
+                        "191.232.244.166",
+                        "52.189.218.133",
+                        "104.211.209.26",
+                        "104.211.158.6",
+                        "52.232.130.177",
+                        "51.140.8.133",
+                        "13.78.151.131",
+                        "13.66.220.128",
+                        "52.231.78.112",
+                        "40.89.155.30",
+                        "40.127.3.33"
+                    ],
+                    "locations": [
+                        {
+                            "host": "centralus",
+                            "ipAddress": "168.61.170.195",
+                            "url": "http://168.61.170.195"
+                        },
+                        {
+                            "host": "eastus",
+                            "ipAddress": "52.168.12.57",
+                            "url": "http://52.168.12.57"
+                        },
+                        {
+                            "host": "westus",
+                            "ipAddress": "40.78.2.46",
+                            "url": "http://40.78.2.46"
+                        },
+                        {
+                            "host": "northcentralus",
+                            "ipAddress": "23.100.78.255",
+                            "url": "http://23.100.78.255"
+                        },
+                        {
+                            "host": "northeurope",
+                            "ipAddress": "23.101.59.88",
+                            "url": "http://23.101.59.88"
+                        },
+                        {
+                            "host": "japanwest",
+                            "ipAddress": "40.74.74.193",
+                            "url": "http://40.74.74.193"
+                        },
+                        {
+                            "host": "brazilsouth",
+                            "ipAddress": "191.232.244.166",
+                            "url": "http://191.232.244.166"
+                        },
+                        {
+                            "host": "australiasoutheast",
+                            "ipAddress": "52.189.218.133",
+                            "url": "http://52.189.218.133"
+                        },
+                        {
+                            "host": "southindia",
+                            "ipAddress": "104.211.209.26",
+                            "url": "http://104.211.209.26"
+                        },
+                        {
+                            "host": "westindia",
+                            "ipAddress": "104.211.158.6",
+                            "url": "http://104.211.158.6"
+                        },
+                        {
+                            "host": "canadaeast",
+                            "ipAddress": "52.232.130.177",
+                            "url": "http://52.232.130.177"
+                        },
+                        {
+                            "host": "uksouth",
+                            "ipAddress": "51.140.8.133",
+                            "url": "http://51.140.8.133"
+                        },
+                        {
+                            "host": "westcentralus",
+                            "ipAddress": "13.78.151.131",
+                            "url": "http://13.78.151.131"
+                        },
+                        {
+                            "host": "westus2",
+                            "ipAddress": "13.66.220.128",
+                            "url": "http://13.66.220.128"
+                        },
+                        {
+                            "host": "koreacentral",
+                            "ipAddress": "52.231.78.112",
+                            "url": "http://52.231.78.112"
+                        },
+                        {
+                            "host": "francecentral",
+                            "ipAddress": "40.89.155.30",
+                            "url": "http://40.89.155.30"
+                        },
+                        {
+                            "host": "southafricanorth",
+                            "ipAddress": "40.127.3.33",
+                            "url": "http://40.127.3.33"
+                        }
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::pulumi:providers:azure::default",
+                "custom": true,
+                "id": "3119fea8-9cdf-43ae-9131-9b490559618f",
+                "type": "pulumi:providers:azure",
+                "inputs": {
+                    "environment": "public",
+                    "version": "0.17.3"
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestusb7f76cc4",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "westus",
+                    "name": "fredwestusb7f76cc4"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestusb7f76cc4",
+                    "location": "westus",
+                    "name": "fredwestusb7f76cc4",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "centralus",
+                    "name": "fredcentralusc45e0fe1"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1",
+                    "location": "centralus",
+                    "name": "fredcentralusc45e0fe1",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "eastus",
+                    "name": "fredeastus45c73dd2"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2",
+                    "location": "eastus",
+                    "name": "fredeastus45c73dd2",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednortheurope",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednortheurope8c3144e3",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "northeurope",
+                    "name": "frednortheurope8c3144e3"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednortheurope8c3144e3",
+                    "location": "northeurope",
+                    "name": "frednortheurope8c3144e3",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredbrazilsouth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredbrazilsouthe5d965b4",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "brazilsouth",
+                    "name": "fredbrazilsouthe5d965b4"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredbrazilsouthe5d965b4",
+                    "location": "brazilsouth",
+                    "name": "fredbrazilsouthe5d965b4",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednorthcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednorthcentralus3e0705f7",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "northcentralus",
+                    "name": "frednorthcentralus3e0705f7"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednorthcentralus3e0705f7",
+                    "location": "northcentralus",
+                    "name": "frednorthcentralus3e0705f7",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthindia",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthindia77c1a4bc",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "southindia",
+                    "name": "fredsouthindia77c1a4bc"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthindia77c1a4bc",
+                    "location": "southindia",
+                    "name": "fredsouthindia77c1a4bc",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestindia",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestindia892b2576",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "westindia",
+                    "name": "fredwestindia892b2576"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestindia892b2576",
+                    "location": "westindia",
+                    "name": "fredwestindia892b2576",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredjapanwest",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredjapanwestaaa898f3",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "japanwest",
+                    "name": "fredjapanwestaaa898f3"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredjapanwestaaa898f3",
+                    "location": "japanwest",
+                    "name": "fredjapanwestaaa898f3",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestcentralusc518ef8f",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "westcentralus",
+                    "name": "fredwestcentralusc518ef8f"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestcentralusc518ef8f",
+                    "location": "westcentralus",
+                    "name": "fredwestcentralusc518ef8f",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredaustraliasoutheast",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredaustraliasoutheastca530b46",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "australiasoutheast",
+                    "name": "fredaustraliasoutheastca530b46"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredaustraliasoutheastca530b46",
+                    "location": "australiasoutheast",
+                    "name": "fredaustraliasoutheastca530b46",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "westus2",
+                    "name": "fredwestus2bce78be9"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9",
+                    "location": "westus2",
+                    "name": "fredwestus2bce78be9",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcanadaeast",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcanadaeastc0307614",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "canadaeast",
+                    "name": "fredcanadaeastc0307614"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcanadaeastc0307614",
+                    "location": "canadaeast",
+                    "name": "fredcanadaeastc0307614",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthafricanorth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthafricanorth84c5eff9",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "southafricanorth",
+                    "name": "fredsouthafricanorth84c5eff9"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthafricanorth84c5eff9",
+                    "location": "southafricanorth",
+                    "name": "fredsouthafricanorth84c5eff9",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::freduksouth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/freduksouth8b961d61",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "uksouth",
+                    "name": "freduksouth8b961d61"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/freduksouth8b961d61",
+                    "location": "uksouth",
+                    "name": "freduksouth8b961d61",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredkoreacentral",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredkoreacentraldfee6806",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "koreacentral",
+                    "name": "fredkoreacentraldfee6806"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredkoreacentraldfee6806",
+                    "location": "koreacentral",
+                    "name": "fredkoreacentraldfee6806",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredfrancecentral",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredfrancecentral5c2a55ab",
+                "type": "azure:core/resourceGroup:ResourceGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "location": "francecentral",
+                    "name": "fredfrancecentral5c2a55ab"
+                },
+                "outputs": {
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredfrancecentral5c2a55ab",
+                    "location": "francecentral",
+                    "name": "fredfrancecentral5c2a55ab",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "location": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestusb7f76cc4/providers/Microsoft.Network/virtualNetworks/westus545d2608",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "westus",
+                    "name": "westus545d2608",
+                    "resourceGroupName": "fredwestusb7f76cc4"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestusb7f76cc4/providers/Microsoft.Network/virtualNetworks/westus545d2608",
+                    "location": "westus",
+                    "name": "westus545d2608",
+                    "resourceGroupName": "fredwestusb7f76cc4",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::westus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestusb7f76cc4/providers/Microsoft.Network/publicIPAddresses/westuse92b375d",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "westus",
+                    "name": "westuse92b375d",
+                    "resourceGroupName": "fredwestusb7f76cc4",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestusb7f76cc4/providers/Microsoft.Network/publicIPAddresses/westuse92b375d",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "40.78.2.46",
+                    "ipVersion": "IPv4",
+                    "location": "westus",
+                    "name": "westuse92b375d",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredwestusb7f76cc4",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::centralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/publicIPAddresses/centralusf6342176",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "centralus",
+                    "name": "centralusf6342176",
+                    "resourceGroupName": "fredcentralusc45e0fe1",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/publicIPAddresses/centralusf6342176",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "168.61.170.195",
+                    "ipVersion": "IPv4",
+                    "location": "centralus",
+                    "name": "centralusf6342176",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredcentralusc45e0fe1",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::centralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/virtualNetworks/centralus34b3d744",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "centralus",
+                    "name": "centralus34b3d744",
+                    "resourceGroupName": "fredcentralusc45e0fe1"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/virtualNetworks/centralus34b3d744",
+                    "location": "centralus",
+                    "name": "centralus34b3d744",
+                    "resourceGroupName": "fredcentralusc45e0fe1",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::eastus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/virtualNetworks/eastus06f6419b",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "eastus",
+                    "name": "eastus06f6419b",
+                    "resourceGroupName": "fredeastus45c73dd2"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/virtualNetworks/eastus06f6419b",
+                    "location": "eastus",
+                    "name": "eastus06f6419b",
+                    "resourceGroupName": "fredeastus45c73dd2",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::eastus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/publicIPAddresses/eastuscc6b8e32",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "eastus",
+                    "name": "eastuscc6b8e32",
+                    "resourceGroupName": "fredeastus45c73dd2",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/publicIPAddresses/eastuscc6b8e32",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "52.168.12.57",
+                    "ipVersion": "IPv4",
+                    "location": "eastus",
+                    "name": "eastuscc6b8e32",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredeastus45c73dd2",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::northeurope",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednortheurope8c3144e3/providers/Microsoft.Network/publicIPAddresses/northeurope595b1849",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "northeurope",
+                    "name": "northeurope595b1849",
+                    "resourceGroupName": "frednortheurope8c3144e3",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednortheurope8c3144e3/providers/Microsoft.Network/publicIPAddresses/northeurope595b1849",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "23.101.59.88",
+                    "ipVersion": "IPv4",
+                    "location": "northeurope",
+                    "name": "northeurope595b1849",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "frednortheurope8c3144e3",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednortheurope"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednortheurope"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednortheurope"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::northeurope",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednortheurope8c3144e3/providers/Microsoft.Network/virtualNetworks/northeuropea1719750",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "northeurope",
+                    "name": "northeuropea1719750",
+                    "resourceGroupName": "frednortheurope8c3144e3"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednortheurope8c3144e3/providers/Microsoft.Network/virtualNetworks/northeuropea1719750",
+                    "location": "northeurope",
+                    "name": "northeuropea1719750",
+                    "resourceGroupName": "frednortheurope8c3144e3",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednortheurope"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednortheurope"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednortheurope"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::brazilsouth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredbrazilsouthe5d965b4/providers/Microsoft.Network/virtualNetworks/brazilsouth3582a145",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "brazilsouth",
+                    "name": "brazilsouth3582a145",
+                    "resourceGroupName": "fredbrazilsouthe5d965b4"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredbrazilsouthe5d965b4/providers/Microsoft.Network/virtualNetworks/brazilsouth3582a145",
+                    "location": "brazilsouth",
+                    "name": "brazilsouth3582a145",
+                    "resourceGroupName": "fredbrazilsouthe5d965b4",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredbrazilsouth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredbrazilsouth"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredbrazilsouth"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::brazilsouth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredbrazilsouthe5d965b4/providers/Microsoft.Network/publicIPAddresses/brazilsouth124a9060",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "brazilsouth",
+                    "name": "brazilsouth124a9060",
+                    "resourceGroupName": "fredbrazilsouthe5d965b4",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredbrazilsouthe5d965b4/providers/Microsoft.Network/publicIPAddresses/brazilsouth124a9060",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "191.232.244.166",
+                    "ipVersion": "IPv4",
+                    "location": "brazilsouth",
+                    "name": "brazilsouth124a9060",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredbrazilsouthe5d965b4",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredbrazilsouth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredbrazilsouth"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredbrazilsouth"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::northcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednorthcentralus3e0705f7/providers/Microsoft.Network/virtualNetworks/northcentralusac6c54e3",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "northcentralus",
+                    "name": "northcentralusac6c54e3",
+                    "resourceGroupName": "frednorthcentralus3e0705f7"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednorthcentralus3e0705f7/providers/Microsoft.Network/virtualNetworks/northcentralusac6c54e3",
+                    "location": "northcentralus",
+                    "name": "northcentralusac6c54e3",
+                    "resourceGroupName": "frednorthcentralus3e0705f7",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednorthcentralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednorthcentralus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednorthcentralus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::northcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednorthcentralus3e0705f7/providers/Microsoft.Network/publicIPAddresses/northcentralus689c2627",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "northcentralus",
+                    "name": "northcentralus689c2627",
+                    "resourceGroupName": "frednorthcentralus3e0705f7",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednorthcentralus3e0705f7/providers/Microsoft.Network/publicIPAddresses/northcentralus689c2627",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "23.100.78.255",
+                    "ipVersion": "IPv4",
+                    "location": "northcentralus",
+                    "name": "northcentralus689c2627",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "frednorthcentralus3e0705f7",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednorthcentralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednorthcentralus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::frednorthcentralus"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::southindia",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthindia77c1a4bc/providers/Microsoft.Network/virtualNetworks/southindia27051dd0",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "southindia",
+                    "name": "southindia27051dd0",
+                    "resourceGroupName": "fredsouthindia77c1a4bc"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthindia77c1a4bc/providers/Microsoft.Network/virtualNetworks/southindia27051dd0",
+                    "location": "southindia",
+                    "name": "southindia27051dd0",
+                    "resourceGroupName": "fredsouthindia77c1a4bc",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthindia"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthindia"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthindia"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::southindia",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthindia77c1a4bc/providers/Microsoft.Network/publicIPAddresses/southindia991cacd4",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "southindia",
+                    "name": "southindia991cacd4",
+                    "resourceGroupName": "fredsouthindia77c1a4bc",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthindia77c1a4bc/providers/Microsoft.Network/publicIPAddresses/southindia991cacd4",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "104.211.209.26",
+                    "ipVersion": "IPv4",
+                    "location": "southindia",
+                    "name": "southindia991cacd4",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredsouthindia77c1a4bc",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthindia"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthindia"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthindia"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westindia",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestindia892b2576/providers/Microsoft.Network/virtualNetworks/westindia493e35ac",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "westindia",
+                    "name": "westindia493e35ac",
+                    "resourceGroupName": "fredwestindia892b2576"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestindia892b2576/providers/Microsoft.Network/virtualNetworks/westindia493e35ac",
+                    "location": "westindia",
+                    "name": "westindia493e35ac",
+                    "resourceGroupName": "fredwestindia892b2576",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestindia"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestindia"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestindia"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::westindia",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestindia892b2576/providers/Microsoft.Network/publicIPAddresses/westindiaf8af1c9e",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "westindia",
+                    "name": "westindiaf8af1c9e",
+                    "resourceGroupName": "fredwestindia892b2576",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestindia892b2576/providers/Microsoft.Network/publicIPAddresses/westindiaf8af1c9e",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "104.211.158.6",
+                    "ipVersion": "IPv4",
+                    "location": "westindia",
+                    "name": "westindiaf8af1c9e",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredwestindia892b2576",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestindia"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestindia"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestindia"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::japanwest",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredjapanwestaaa898f3/providers/Microsoft.Network/virtualNetworks/japanwestdaa8737d",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "japanwest",
+                    "name": "japanwestdaa8737d",
+                    "resourceGroupName": "fredjapanwestaaa898f3"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredjapanwestaaa898f3/providers/Microsoft.Network/virtualNetworks/japanwestdaa8737d",
+                    "location": "japanwest",
+                    "name": "japanwestdaa8737d",
+                    "resourceGroupName": "fredjapanwestaaa898f3",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredjapanwest"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredjapanwest"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredjapanwest"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::japanwest",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredjapanwestaaa898f3/providers/Microsoft.Network/publicIPAddresses/japanwest4a5022a6",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "japanwest",
+                    "name": "japanwest4a5022a6",
+                    "resourceGroupName": "fredjapanwestaaa898f3",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredjapanwestaaa898f3/providers/Microsoft.Network/publicIPAddresses/japanwest4a5022a6",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "40.74.74.193",
+                    "ipVersion": "IPv4",
+                    "location": "japanwest",
+                    "name": "japanwest4a5022a6",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredjapanwestaaa898f3",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredjapanwest"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredjapanwest"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredjapanwest"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestcentralusc518ef8f/providers/Microsoft.Network/virtualNetworks/westcentralusbf235445",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "westcentralus",
+                    "name": "westcentralusbf235445",
+                    "resourceGroupName": "fredwestcentralusc518ef8f"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestcentralusc518ef8f/providers/Microsoft.Network/virtualNetworks/westcentralusbf235445",
+                    "location": "westcentralus",
+                    "name": "westcentralusbf235445",
+                    "resourceGroupName": "fredwestcentralusc518ef8f",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestcentralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestcentralus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestcentralus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::westcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestcentralusc518ef8f/providers/Microsoft.Network/publicIPAddresses/westcentralus5ad880a9",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "westcentralus",
+                    "name": "westcentralus5ad880a9",
+                    "resourceGroupName": "fredwestcentralusc518ef8f",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestcentralusc518ef8f/providers/Microsoft.Network/publicIPAddresses/westcentralus5ad880a9",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "13.78.151.131",
+                    "ipVersion": "IPv4",
+                    "location": "westcentralus",
+                    "name": "westcentralus5ad880a9",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredwestcentralusc518ef8f",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestcentralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestcentralus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestcentralus"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::straliasoutheast",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredaustraliasoutheastca530b46/providers/Microsoft.Network/virtualNetworks/straliasoutheastc6bc2333",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "australiasoutheast",
+                    "name": "straliasoutheastc6bc2333",
+                    "resourceGroupName": "fredaustraliasoutheastca530b46"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredaustraliasoutheastca530b46/providers/Microsoft.Network/virtualNetworks/straliasoutheastc6bc2333",
+                    "location": "australiasoutheast",
+                    "name": "straliasoutheastc6bc2333",
+                    "resourceGroupName": "fredaustraliasoutheastca530b46",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredaustraliasoutheast"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredaustraliasoutheast"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredaustraliasoutheast"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::straliasoutheast",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredaustraliasoutheastca530b46/providers/Microsoft.Network/publicIPAddresses/straliasoutheast309727ac",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "australiasoutheast",
+                    "name": "straliasoutheast309727ac",
+                    "resourceGroupName": "fredaustraliasoutheastca530b46",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredaustraliasoutheastca530b46/providers/Microsoft.Network/publicIPAddresses/straliasoutheast309727ac",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "52.189.218.133",
+                    "ipVersion": "IPv4",
+                    "location": "australiasoutheast",
+                    "name": "straliasoutheast309727ac",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredaustraliasoutheastca530b46",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredaustraliasoutheast"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredaustraliasoutheast"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredaustraliasoutheast"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::westus2",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/publicIPAddresses/westus208a6279b",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "westus2",
+                    "name": "westus208a6279b",
+                    "resourceGroupName": "fredwestus2bce78be9",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/publicIPAddresses/westus208a6279b",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "13.66.220.128",
+                    "ipVersion": "IPv4",
+                    "location": "westus2",
+                    "name": "westus208a6279b",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredwestus2bce78be9",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westus2",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/virtualNetworks/westus236f8b6d8",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "westus2",
+                    "name": "westus236f8b6d8",
+                    "resourceGroupName": "fredwestus2bce78be9"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/virtualNetworks/westus236f8b6d8",
+                    "location": "westus2",
+                    "name": "westus236f8b6d8",
+                    "resourceGroupName": "fredwestus2bce78be9",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::canadaeast",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcanadaeastc0307614/providers/Microsoft.Network/publicIPAddresses/canadaeasta5223dcf",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "canadaeast",
+                    "name": "canadaeasta5223dcf",
+                    "resourceGroupName": "fredcanadaeastc0307614",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcanadaeastc0307614/providers/Microsoft.Network/publicIPAddresses/canadaeasta5223dcf",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "52.232.130.177",
+                    "ipVersion": "IPv4",
+                    "location": "canadaeast",
+                    "name": "canadaeasta5223dcf",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredcanadaeastc0307614",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcanadaeast"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcanadaeast"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcanadaeast"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::canadaeast",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcanadaeastc0307614/providers/Microsoft.Network/virtualNetworks/canadaeastbd5b45bb",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "canadaeast",
+                    "name": "canadaeastbd5b45bb",
+                    "resourceGroupName": "fredcanadaeastc0307614"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcanadaeastc0307614/providers/Microsoft.Network/virtualNetworks/canadaeastbd5b45bb",
+                    "location": "canadaeast",
+                    "name": "canadaeastbd5b45bb",
+                    "resourceGroupName": "fredcanadaeastc0307614",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcanadaeast"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcanadaeast"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcanadaeast"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::southafricanorth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthafricanorth84c5eff9/providers/Microsoft.Network/virtualNetworks/southafricanorth6e981381",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "southafricanorth",
+                    "name": "southafricanorth6e981381",
+                    "resourceGroupName": "fredsouthafricanorth84c5eff9"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthafricanorth84c5eff9/providers/Microsoft.Network/virtualNetworks/southafricanorth6e981381",
+                    "location": "southafricanorth",
+                    "name": "southafricanorth6e981381",
+                    "resourceGroupName": "fredsouthafricanorth84c5eff9",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthafricanorth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthafricanorth"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthafricanorth"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::southafricanorth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthafricanorth84c5eff9/providers/Microsoft.Network/publicIPAddresses/southafricanorth1324f6f4",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "southafricanorth",
+                    "name": "southafricanorth1324f6f4",
+                    "resourceGroupName": "fredsouthafricanorth84c5eff9",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthafricanorth84c5eff9/providers/Microsoft.Network/publicIPAddresses/southafricanorth1324f6f4",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "40.127.3.33",
+                    "ipVersion": "IPv4",
+                    "location": "southafricanorth",
+                    "name": "southafricanorth1324f6f4",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredsouthafricanorth84c5eff9",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthafricanorth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthafricanorth"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredsouthafricanorth"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::uksouth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/freduksouth8b961d61/providers/Microsoft.Network/virtualNetworks/uksouth409e384a",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "uksouth",
+                    "name": "uksouth409e384a",
+                    "resourceGroupName": "freduksouth8b961d61"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/freduksouth8b961d61/providers/Microsoft.Network/virtualNetworks/uksouth409e384a",
+                    "location": "uksouth",
+                    "name": "uksouth409e384a",
+                    "resourceGroupName": "freduksouth8b961d61",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::freduksouth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::freduksouth"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::freduksouth"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::uksouth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/freduksouth8b961d61/providers/Microsoft.Network/publicIPAddresses/uksouthfef88e7b",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "uksouth",
+                    "name": "uksouthfef88e7b",
+                    "resourceGroupName": "freduksouth8b961d61",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/freduksouth8b961d61/providers/Microsoft.Network/publicIPAddresses/uksouthfef88e7b",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "51.140.8.133",
+                    "ipVersion": "IPv4",
+                    "location": "uksouth",
+                    "name": "uksouthfef88e7b",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "freduksouth8b961d61",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::freduksouth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::freduksouth"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::freduksouth"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::koreacentral",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredkoreacentraldfee6806/providers/Microsoft.Network/virtualNetworks/koreacentrala896a93f",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "koreacentral",
+                    "name": "koreacentrala896a93f",
+                    "resourceGroupName": "fredkoreacentraldfee6806"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredkoreacentraldfee6806/providers/Microsoft.Network/virtualNetworks/koreacentrala896a93f",
+                    "location": "koreacentral",
+                    "name": "koreacentrala896a93f",
+                    "resourceGroupName": "fredkoreacentraldfee6806",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredkoreacentral"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredkoreacentral"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredkoreacentral"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::koreacentral",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredkoreacentraldfee6806/providers/Microsoft.Network/publicIPAddresses/koreacentral93edc464",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "koreacentral",
+                    "name": "koreacentral93edc464",
+                    "resourceGroupName": "fredkoreacentraldfee6806",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredkoreacentraldfee6806/providers/Microsoft.Network/publicIPAddresses/koreacentral93edc464",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "52.231.78.112",
+                    "ipVersion": "IPv4",
+                    "location": "koreacentral",
+                    "name": "koreacentral93edc464",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredkoreacentraldfee6806",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredkoreacentral"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredkoreacentral"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredkoreacentral"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::westus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestusb7f76cc4/providers/Microsoft.Network/virtualNetworks/westus545d2608/subnets/westusf2d28447",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "westusf2d28447",
+                    "resourceGroupName": "fredwestusb7f76cc4",
+                    "virtualNetworkName": "westus545d2608"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestusb7f76cc4/providers/Microsoft.Network/virtualNetworks/westus545d2608/subnets/westusf2d28447",
+                    "ipConfigurations": [],
+                    "name": "westusf2d28447",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredwestusb7f76cc4",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "westus545d2608"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westus"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::francecentral",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredfrancecentral5c2a55ab/providers/Microsoft.Network/virtualNetworks/francecentral9e3226d5",
+                "type": "azure:network/virtualNetwork:VirtualNetwork",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "location": "francecentral",
+                    "name": "francecentral9e3226d5",
+                    "resourceGroupName": "fredfrancecentral5c2a55ab"
+                },
+                "outputs": {
+                    "addressSpaces": [
+                        "10.0.0.0/16"
+                    ],
+                    "dnsServers": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredfrancecentral5c2a55ab/providers/Microsoft.Network/virtualNetworks/francecentral9e3226d5",
+                    "location": "francecentral",
+                    "name": "francecentral9e3226d5",
+                    "resourceGroupName": "fredfrancecentral5c2a55ab",
+                    "subnets": [],
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredfrancecentral"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressSpaces": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredfrancecentral"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredfrancecentral"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::centralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/virtualNetworks/centralus34b3d744/subnets/centralus2c6dfb18",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "centralus2c6dfb18",
+                    "resourceGroupName": "fredcentralusc45e0fe1",
+                    "virtualNetworkName": "centralus34b3d744"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/virtualNetworks/centralus34b3d744/subnets/centralus2c6dfb18",
+                    "ipConfigurations": [],
+                    "name": "centralus2c6dfb18",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredcentralusc45e0fe1",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "centralus34b3d744"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::centralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::centralus"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::centralus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::francecentral",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredfrancecentral5c2a55ab/providers/Microsoft.Network/publicIPAddresses/francecentral16fe1ef9",
+                "type": "azure:network/publicIp:PublicIp",
+                "inputs": {
+                    "__defaults": [
+                        "idleTimeoutInMinutes",
+                        "ipVersion",
+                        "name",
+                        "sku"
+                    ],
+                    "allocationMethod": "Static",
+                    "idleTimeoutInMinutes": 4,
+                    "ipVersion": "IPv4",
+                    "location": "francecentral",
+                    "name": "francecentral16fe1ef9",
+                    "resourceGroupName": "fredfrancecentral5c2a55ab",
+                    "sku": "Basic",
+                    "tags": {
+                        "__defaults": [],
+                        "environment": "Demo"
+                    }
+                },
+                "outputs": {
+                    "allocationMethod": "Static",
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredfrancecentral5c2a55ab/providers/Microsoft.Network/publicIPAddresses/francecentral16fe1ef9",
+                    "idleTimeoutInMinutes": 4,
+                    "ipAddress": "40.89.155.30",
+                    "ipVersion": "IPv4",
+                    "location": "francecentral",
+                    "name": "francecentral16fe1ef9",
+                    "publicIpAddressAllocation": "Static",
+                    "resourceGroupName": "fredfrancecentral5c2a55ab",
+                    "sku": "Basic",
+                    "tags": {
+                        "environment": "Demo"
+                    }
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredfrancecentral"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "allocationMethod": null,
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredfrancecentral"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredfrancecentral"
+                    ],
+                    "tags": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::japanwest",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredjapanwestaaa898f3/providers/Microsoft.Network/virtualNetworks/japanwestdaa8737d/subnets/japanwest781c496f",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "japanwest781c496f",
+                    "resourceGroupName": "fredjapanwestaaa898f3",
+                    "virtualNetworkName": "japanwestdaa8737d"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredjapanwestaaa898f3/providers/Microsoft.Network/virtualNetworks/japanwestdaa8737d/subnets/japanwest781c496f",
+                    "ipConfigurations": [],
+                    "name": "japanwest781c496f",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredjapanwestaaa898f3",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "japanwestdaa8737d"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::japanwest"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::japanwest"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::japanwest"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::northeurope",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednortheurope8c3144e3/providers/Microsoft.Network/virtualNetworks/northeuropea1719750/subnets/northeuropeac8c2c02",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "northeuropeac8c2c02",
+                    "resourceGroupName": "frednortheurope8c3144e3",
+                    "virtualNetworkName": "northeuropea1719750"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednortheurope8c3144e3/providers/Microsoft.Network/virtualNetworks/northeuropea1719750/subnets/northeuropeac8c2c02",
+                    "ipConfigurations": [],
+                    "name": "northeuropeac8c2c02",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "frednortheurope8c3144e3",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "northeuropea1719750"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::northeurope"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::northeurope"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::northeurope"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::southindia",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthindia77c1a4bc/providers/Microsoft.Network/virtualNetworks/southindia27051dd0/subnets/southindiaef201ccb",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "southindiaef201ccb",
+                    "resourceGroupName": "fredsouthindia77c1a4bc",
+                    "virtualNetworkName": "southindia27051dd0"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthindia77c1a4bc/providers/Microsoft.Network/virtualNetworks/southindia27051dd0/subnets/southindiaef201ccb",
+                    "ipConfigurations": [],
+                    "name": "southindiaef201ccb",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredsouthindia77c1a4bc",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "southindia27051dd0"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::southindia"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::southindia"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::southindia"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::westcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestcentralusc518ef8f/providers/Microsoft.Network/virtualNetworks/westcentralusbf235445/subnets/westcentralus9485a8b1",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "westcentralus9485a8b1",
+                    "resourceGroupName": "fredwestcentralusc518ef8f",
+                    "virtualNetworkName": "westcentralusbf235445"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestcentralusc518ef8f/providers/Microsoft.Network/virtualNetworks/westcentralusbf235445/subnets/westcentralus9485a8b1",
+                    "ipConfigurations": [],
+                    "name": "westcentralus9485a8b1",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredwestcentralusc518ef8f",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "westcentralusbf235445"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westcentralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westcentralus"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westcentralus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::southafricanorth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthafricanorth84c5eff9/providers/Microsoft.Network/virtualNetworks/southafricanorth6e981381/subnets/southafricanorthad2b2c7f",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "southafricanorthad2b2c7f",
+                    "resourceGroupName": "fredsouthafricanorth84c5eff9",
+                    "virtualNetworkName": "southafricanorth6e981381"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredsouthafricanorth84c5eff9/providers/Microsoft.Network/virtualNetworks/southafricanorth6e981381/subnets/southafricanorthad2b2c7f",
+                    "ipConfigurations": [],
+                    "name": "southafricanorthad2b2c7f",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredsouthafricanorth84c5eff9",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "southafricanorth6e981381"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::southafricanorth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::southafricanorth"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::southafricanorth"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::northcentralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednorthcentralus3e0705f7/providers/Microsoft.Network/virtualNetworks/northcentralusac6c54e3/subnets/northcentralus066db6c1",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "northcentralus066db6c1",
+                    "resourceGroupName": "frednorthcentralus3e0705f7",
+                    "virtualNetworkName": "northcentralusac6c54e3"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/frednorthcentralus3e0705f7/providers/Microsoft.Network/virtualNetworks/northcentralusac6c54e3/subnets/northcentralus066db6c1",
+                    "ipConfigurations": [],
+                    "name": "northcentralus066db6c1",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "frednorthcentralus3e0705f7",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "northcentralusac6c54e3"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::northcentralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::northcentralus"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::northcentralus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::straliasoutheast",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredaustraliasoutheastca530b46/providers/Microsoft.Network/virtualNetworks/straliasoutheastc6bc2333/subnets/straliasoutheasta58596da",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "straliasoutheasta58596da",
+                    "resourceGroupName": "fredaustraliasoutheastca530b46",
+                    "virtualNetworkName": "straliasoutheastc6bc2333"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredaustraliasoutheastca530b46/providers/Microsoft.Network/virtualNetworks/straliasoutheastc6bc2333/subnets/straliasoutheasta58596da",
+                    "ipConfigurations": [],
+                    "name": "straliasoutheasta58596da",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredaustraliasoutheastca530b46",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "straliasoutheastc6bc2333"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::straliasoutheast"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::straliasoutheast"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::straliasoutheast"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::uksouth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/freduksouth8b961d61/providers/Microsoft.Network/virtualNetworks/uksouth409e384a/subnets/uksouth9a3da9a4",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "uksouth9a3da9a4",
+                    "resourceGroupName": "freduksouth8b961d61",
+                    "virtualNetworkName": "uksouth409e384a"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/freduksouth8b961d61/providers/Microsoft.Network/virtualNetworks/uksouth409e384a/subnets/uksouth9a3da9a4",
+                    "ipConfigurations": [],
+                    "name": "uksouth9a3da9a4",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "freduksouth8b961d61",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "uksouth409e384a"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::uksouth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::uksouth"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::uksouth"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::westindia",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestindia892b2576/providers/Microsoft.Network/virtualNetworks/westindia493e35ac/subnets/westindiaa4bb30b4",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "westindiaa4bb30b4",
+                    "resourceGroupName": "fredwestindia892b2576",
+                    "virtualNetworkName": "westindia493e35ac"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestindia892b2576/providers/Microsoft.Network/virtualNetworks/westindia493e35ac/subnets/westindiaa4bb30b4",
+                    "ipConfigurations": [],
+                    "name": "westindiaa4bb30b4",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredwestindia892b2576",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "westindia493e35ac"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westindia"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westindia"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westindia"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::koreacentral",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredkoreacentraldfee6806/providers/Microsoft.Network/virtualNetworks/koreacentrala896a93f/subnets/koreacentral03cdaeb8",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "koreacentral03cdaeb8",
+                    "resourceGroupName": "fredkoreacentraldfee6806",
+                    "virtualNetworkName": "koreacentrala896a93f"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredkoreacentraldfee6806/providers/Microsoft.Network/virtualNetworks/koreacentrala896a93f/subnets/koreacentral03cdaeb8",
+                    "ipConfigurations": [],
+                    "name": "koreacentral03cdaeb8",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredkoreacentraldfee6806",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "koreacentrala896a93f"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::koreacentral"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::koreacentral"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::koreacentral"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::eastus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/virtualNetworks/eastus06f6419b/subnets/eastusd6613266",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "eastusd6613266",
+                    "resourceGroupName": "fredeastus45c73dd2",
+                    "virtualNetworkName": "eastus06f6419b"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/virtualNetworks/eastus06f6419b/subnets/eastusd6613266",
+                    "ipConfigurations": [],
+                    "name": "eastusd6613266",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredeastus45c73dd2",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "eastus06f6419b"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::eastus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::eastus"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::eastus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::brazilsouth",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredbrazilsouthe5d965b4/providers/Microsoft.Network/virtualNetworks/brazilsouth3582a145/subnets/brazilsouth9328c1c6",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "brazilsouth9328c1c6",
+                    "resourceGroupName": "fredbrazilsouthe5d965b4",
+                    "virtualNetworkName": "brazilsouth3582a145"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredbrazilsouthe5d965b4/providers/Microsoft.Network/virtualNetworks/brazilsouth3582a145/subnets/brazilsouth9328c1c6",
+                    "ipConfigurations": [],
+                    "name": "brazilsouth9328c1c6",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredbrazilsouthe5d965b4",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "brazilsouth3582a145"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::brazilsouth"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::brazilsouth"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::brazilsouth"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::westus2",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/virtualNetworks/westus236f8b6d8/subnets/westus21881f317",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "westus21881f317",
+                    "resourceGroupName": "fredwestus2bce78be9",
+                    "virtualNetworkName": "westus236f8b6d8"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/virtualNetworks/westus236f8b6d8/subnets/westus21881f317",
+                    "ipConfigurations": [],
+                    "name": "westus21881f317",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredwestus2bce78be9",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "westus236f8b6d8"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westus2"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westus2"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::westus2"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::canadaeast",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcanadaeastc0307614/providers/Microsoft.Network/virtualNetworks/canadaeastbd5b45bb/subnets/canadaeast692fc712",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "canadaeast692fc712",
+                    "resourceGroupName": "fredcanadaeastc0307614",
+                    "virtualNetworkName": "canadaeastbd5b45bb"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcanadaeastc0307614/providers/Microsoft.Network/virtualNetworks/canadaeastbd5b45bb/subnets/canadaeast692fc712",
+                    "ipConfigurations": [],
+                    "name": "canadaeast692fc712",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredcanadaeastc0307614",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "canadaeastbd5b45bb"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::canadaeast"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::canadaeast"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::canadaeast"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/networkInterface:NetworkInterface::centralus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/networkInterfaces/centralus4e22a809",
+                "type": "azure:network/networkInterface:NetworkInterface",
+                "inputs": {
+                    "__defaults": [
+                        "enableAcceleratedNetworking",
+                        "enableIpForwarding",
+                        "name"
+                    ],
+                    "enableAcceleratedNetworking": false,
+                    "enableIpForwarding": false,
+                    "ipConfigurations": [
+                        {
+                            "__defaults": [
+                                "privateIpAddressVersion"
+                            ],
+                            "name": "test",
+                            "privateIpAddressAllocation": "Dynamic",
+                            "privateIpAddressVersion": "IPv4",
+                            "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/publicIPAddresses/centralusf6342176",
+                            "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/virtualNetworks/centralus34b3d744/subnets/centralus2c6dfb18"
+                        }
+                    ],
+                    "location": "centralus",
+                    "name": "centralus4e22a809",
+                    "resourceGroupName": "fredcentralusc45e0fe1"
+                },
+                "outputs": {
+                    "appliedDnsServers": [],
+                    "dnsServers": [],
+                    "enableAcceleratedNetworking": false,
+                    "enableIpForwarding": false,
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/networkInterfaces/centralus4e22a809",
+                    "internalDnsNameLabel": "",
+                    "internalFqdn": "",
+                    "ipConfigurations": [
+                        {
+                            "applicationGatewayBackendAddressPoolsIds": [],
+                            "applicationSecurityGroupIds": [],
+                            "loadBalancerBackendAddressPoolsIds": [],
+                            "loadBalancerInboundNatRulesIds": [],
+                            "name": "test",
+                            "primary": true,
+                            "privateIpAddress": "",
+                            "privateIpAddressAllocation": "dynamic",
+                            "privateIpAddressVersion": "IPv4",
+                            "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/publicIPAddresses/centralusf6342176",
+                            "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/virtualNetworks/centralus34b3d744/subnets/centralus2c6dfb18"
+                        }
+                    ],
+                    "location": "centralus",
+                    "macAddress": "",
+                    "name": "centralus4e22a809",
+                    "networkSecurityGroupId": "",
+                    "privateIpAddress": "10.0.2.4",
+                    "privateIpAddresses": [
+                        "10.0.2.4"
+                    ],
+                    "resourceGroupName": "fredcentralusc45e0fe1",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus",
+                    "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::centralus",
+                    "urn:pulumi:dev::test::azure:network/subnet:Subnet::centralus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "ipConfigurations": [
+                        "urn:pulumi:dev::test::azure:network/subnet:Subnet::centralus",
+                        "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::centralus"
+                    ],
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/subnet:Subnet::francecentral",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredfrancecentral5c2a55ab/providers/Microsoft.Network/virtualNetworks/francecentral9e3226d5/subnets/francecentral65e460a9",
+                "type": "azure:network/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "addressPrefix": "10.0.2.0/24",
+                    "name": "francecentral65e460a9",
+                    "resourceGroupName": "fredfrancecentral5c2a55ab",
+                    "virtualNetworkName": "francecentral9e3226d5"
+                },
+                "outputs": {
+                    "addressPrefix": "10.0.2.0/24",
+                    "delegations": [],
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredfrancecentral5c2a55ab/providers/Microsoft.Network/virtualNetworks/francecentral9e3226d5/subnets/francecentral65e460a9",
+                    "ipConfigurations": [],
+                    "name": "francecentral65e460a9",
+                    "networkSecurityGroupId": "",
+                    "resourceGroupName": "fredfrancecentral5c2a55ab",
+                    "routeTableId": "",
+                    "serviceEndpoints": [],
+                    "virtualNetworkName": "francecentral9e3226d5"
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::francecentral"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "addressPrefix": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::francecentral"
+                    ],
+                    "virtualNetworkName": [
+                        "urn:pulumi:dev::test::azure:network/virtualNetwork:VirtualNetwork::francecentral"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/networkInterface:NetworkInterface::eastus",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/networkInterfaces/eastusc51329dc",
+                "type": "azure:network/networkInterface:NetworkInterface",
+                "inputs": {
+                    "__defaults": [
+                        "enableAcceleratedNetworking",
+                        "enableIpForwarding",
+                        "name"
+                    ],
+                    "enableAcceleratedNetworking": false,
+                    "enableIpForwarding": false,
+                    "ipConfigurations": [
+                        {
+                            "__defaults": [
+                                "privateIpAddressVersion"
+                            ],
+                            "name": "test",
+                            "privateIpAddressAllocation": "Dynamic",
+                            "privateIpAddressVersion": "IPv4",
+                            "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/publicIPAddresses/eastuscc6b8e32",
+                            "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/virtualNetworks/eastus06f6419b/subnets/eastusd6613266"
+                        }
+                    ],
+                    "location": "eastus",
+                    "name": "eastusc51329dc",
+                    "resourceGroupName": "fredeastus45c73dd2"
+                },
+                "outputs": {
+                    "appliedDnsServers": [],
+                    "dnsServers": [],
+                    "enableAcceleratedNetworking": false,
+                    "enableIpForwarding": false,
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/networkInterfaces/eastusc51329dc",
+                    "internalDnsNameLabel": "",
+                    "internalFqdn": "",
+                    "ipConfigurations": [
+                        {
+                            "applicationGatewayBackendAddressPoolsIds": [],
+                            "applicationSecurityGroupIds": [],
+                            "loadBalancerBackendAddressPoolsIds": [],
+                            "loadBalancerInboundNatRulesIds": [],
+                            "name": "test",
+                            "primary": true,
+                            "privateIpAddress": "",
+                            "privateIpAddressAllocation": "dynamic",
+                            "privateIpAddressVersion": "IPv4",
+                            "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/publicIPAddresses/eastuscc6b8e32",
+                            "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/virtualNetworks/eastus06f6419b/subnets/eastusd6613266"
+                        }
+                    ],
+                    "location": "eastus",
+                    "macAddress": "",
+                    "name": "eastusc51329dc",
+                    "networkSecurityGroupId": "",
+                    "privateIpAddress": "10.0.2.4",
+                    "privateIpAddresses": [
+                        "10.0.2.4"
+                    ],
+                    "resourceGroupName": "fredeastus45c73dd2",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus",
+                    "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::eastus",
+                    "urn:pulumi:dev::test::azure:network/subnet:Subnet::eastus"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "ipConfigurations": [
+                        "urn:pulumi:dev::test::azure:network/subnet:Subnet::eastus",
+                        "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::eastus"
+                    ],
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::test::azure:network/networkInterface:NetworkInterface::westus2",
+                "custom": true,
+                "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/networkInterfaces/westus2f35a94dc",
+                "type": "azure:network/networkInterface:NetworkInterface",
+                "inputs": {
+                    "__defaults": [
+                        "enableAcceleratedNetworking",
+                        "enableIpForwarding",
+                        "name"
+                    ],
+                    "enableAcceleratedNetworking": false,
+                    "enableIpForwarding": false,
+                    "ipConfigurations": [
+                        {
+                            "__defaults": [
+                                "privateIpAddressVersion"
+                            ],
+                            "name": "test",
+                            "privateIpAddressAllocation": "Dynamic",
+                            "privateIpAddressVersion": "IPv4",
+                            "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/publicIPAddresses/westus208a6279b",
+                            "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/virtualNetworks/westus236f8b6d8/subnets/westus21881f317"
+                        }
+                    ],
+                    "location": "westus2",
+                    "name": "westus2f35a94dc",
+                    "resourceGroupName": "fredwestus2bce78be9"
+                },
+                "outputs": {
+                    "appliedDnsServers": [],
+                    "dnsServers": [],
+                    "enableAcceleratedNetworking": false,
+                    "enableIpForwarding": false,
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/networkInterfaces/westus2f35a94dc",
+                    "internalDnsNameLabel": "",
+                    "internalFqdn": "",
+                    "ipConfigurations": [
+                        {
+                            "applicationGatewayBackendAddressPoolsIds": [],
+                            "applicationSecurityGroupIds": [],
+                            "loadBalancerBackendAddressPoolsIds": [],
+                            "loadBalancerInboundNatRulesIds": [],
+                            "name": "test",
+                            "primary": true,
+                            "privateIpAddress": "",
+                            "privateIpAddressAllocation": "dynamic",
+                            "privateIpAddressVersion": "IPv4",
+                            "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/publicIPAddresses/westus208a6279b",
+                            "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/virtualNetworks/westus236f8b6d8/subnets/westus21881f317"
+                        }
+                    ],
+                    "location": "westus2",
+                    "macAddress": "",
+                    "name": "westus2f35a94dc",
+                    "networkSecurityGroupId": "",
+                    "privateIpAddress": "10.0.2.4",
+                    "privateIpAddresses": [
+                        "10.0.2.4"
+                    ],
+                    "resourceGroupName": "fredwestus2bce78be9",
+                    "tags": {}
+                },
+                "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2",
+                    "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::westus2",
+                    "urn:pulumi:dev::test::azure:network/subnet:Subnet::westus2"
+                ],
+                "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                "propertyDependencies": {
+                    "ipConfigurations": [
+                        "urn:pulumi:dev::test::azure:network/subnet:Subnet::westus2",
+                        "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::westus2"
+                    ],
+                    "location": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                    ]
+                }
+            }
+        ],
+        "pending_operations": [
+            {
+                "resource": {
+                    "urn": "urn:pulumi:dev::test::azure:network/networkInterface:NetworkInterface::centralus",
+                    "custom": true,
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/networkInterfaces/centralus4e22a809",
+                    "type": "azure:network/networkInterface:NetworkInterface",
+                    "inputs": {
+                        "__defaults": [
+                            "enableAcceleratedNetworking",
+                            "enableIpForwarding",
+                            "name"
+                        ],
+                        "enableAcceleratedNetworking": false,
+                        "enableIpForwarding": false,
+                        "ipConfigurations": [
+                            {
+                                "__defaults": [
+                                    "privateIpAddressVersion"
+                                ],
+                                "name": "test",
+                                "privateIpAddressAllocation": "Dynamic",
+                                "privateIpAddressVersion": "IPv4",
+                                "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/publicIPAddresses/centralusf6342176",
+                                "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/virtualNetworks/centralus34b3d744/subnets/centralus2c6dfb18"
+                            }
+                        ],
+                        "location": "centralus",
+                        "name": "centralus4e22a809",
+                        "resourceGroupName": "fredcentralusc45e0fe1"
+                    },
+                    "outputs": {
+                        "appliedDnsServers": [],
+                        "dnsServers": [],
+                        "enableAcceleratedNetworking": false,
+                        "enableIpForwarding": false,
+                        "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/networkInterfaces/centralus4e22a809",
+                        "internalDnsNameLabel": "",
+                        "internalFqdn": "",
+                        "ipConfigurations": [
+                            {
+                                "applicationGatewayBackendAddressPoolsIds": [],
+                                "applicationSecurityGroupIds": [],
+                                "loadBalancerBackendAddressPoolsIds": [],
+                                "loadBalancerInboundNatRulesIds": [],
+                                "name": "test",
+                                "primary": true,
+                                "privateIpAddress": "",
+                                "privateIpAddressAllocation": "dynamic",
+                                "privateIpAddressVersion": "IPv4",
+                                "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/publicIPAddresses/centralusf6342176",
+                                "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredcentralusc45e0fe1/providers/Microsoft.Network/virtualNetworks/centralus34b3d744/subnets/centralus2c6dfb18"
+                            }
+                        ],
+                        "location": "centralus",
+                        "macAddress": "",
+                        "name": "centralus4e22a809",
+                        "networkSecurityGroupId": "",
+                        "privateIpAddress": "10.0.2.4",
+                        "privateIpAddresses": [
+                            "10.0.2.4"
+                        ],
+                        "resourceGroupName": "fredcentralusc45e0fe1",
+                        "tags": {}
+                    },
+                    "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus",
+                        "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::centralus",
+                        "urn:pulumi:dev::test::azure:network/subnet:Subnet::centralus"
+                    ],
+                    "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                    "propertyDependencies": {
+                        "ipConfigurations": [
+                            "urn:pulumi:dev::test::azure:network/subnet:Subnet::centralus",
+                            "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::centralus"
+                        ],
+                        "location": [
+                            "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                        ],
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredcentralus"
+                        ]
+                    }
+                },
+                "type": "deleting"
+            },
+            {
+                "resource": {
+                    "urn": "urn:pulumi:dev::test::azure:network/networkInterface:NetworkInterface::eastus",
+                    "custom": true,
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/networkInterfaces/eastusc51329dc",
+                    "type": "azure:network/networkInterface:NetworkInterface",
+                    "inputs": {
+                        "__defaults": [
+                            "enableAcceleratedNetworking",
+                            "enableIpForwarding",
+                            "name"
+                        ],
+                        "enableAcceleratedNetworking": false,
+                        "enableIpForwarding": false,
+                        "ipConfigurations": [
+                            {
+                                "__defaults": [
+                                    "privateIpAddressVersion"
+                                ],
+                                "name": "test",
+                                "privateIpAddressAllocation": "Dynamic",
+                                "privateIpAddressVersion": "IPv4",
+                                "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/publicIPAddresses/eastuscc6b8e32",
+                                "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/virtualNetworks/eastus06f6419b/subnets/eastusd6613266"
+                            }
+                        ],
+                        "location": "eastus",
+                        "name": "eastusc51329dc",
+                        "resourceGroupName": "fredeastus45c73dd2"
+                    },
+                    "outputs": {
+                        "appliedDnsServers": [],
+                        "dnsServers": [],
+                        "enableAcceleratedNetworking": false,
+                        "enableIpForwarding": false,
+                        "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/networkInterfaces/eastusc51329dc",
+                        "internalDnsNameLabel": "",
+                        "internalFqdn": "",
+                        "ipConfigurations": [
+                            {
+                                "applicationGatewayBackendAddressPoolsIds": [],
+                                "applicationSecurityGroupIds": [],
+                                "loadBalancerBackendAddressPoolsIds": [],
+                                "loadBalancerInboundNatRulesIds": [],
+                                "name": "test",
+                                "primary": true,
+                                "privateIpAddress": "",
+                                "privateIpAddressAllocation": "dynamic",
+                                "privateIpAddressVersion": "IPv4",
+                                "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/publicIPAddresses/eastuscc6b8e32",
+                                "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredeastus45c73dd2/providers/Microsoft.Network/virtualNetworks/eastus06f6419b/subnets/eastusd6613266"
+                            }
+                        ],
+                        "location": "eastus",
+                        "macAddress": "",
+                        "name": "eastusc51329dc",
+                        "networkSecurityGroupId": "",
+                        "privateIpAddress": "10.0.2.4",
+                        "privateIpAddresses": [
+                            "10.0.2.4"
+                        ],
+                        "resourceGroupName": "fredeastus45c73dd2",
+                        "tags": {}
+                    },
+                    "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus",
+                        "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::eastus",
+                        "urn:pulumi:dev::test::azure:network/subnet:Subnet::eastus"
+                    ],
+                    "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                    "propertyDependencies": {
+                        "ipConfigurations": [
+                            "urn:pulumi:dev::test::azure:network/subnet:Subnet::eastus",
+                            "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::eastus"
+                        ],
+                        "location": [
+                            "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                        ],
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredeastus"
+                        ]
+                    }
+                },
+                "type": "deleting"
+            },
+            {
+                "resource": {
+                    "urn": "urn:pulumi:dev::test::azure:network/networkInterface:NetworkInterface::westus2",
+                    "custom": true,
+                    "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/networkInterfaces/westus2f35a94dc",
+                    "type": "azure:network/networkInterface:NetworkInterface",
+                    "inputs": {
+                        "__defaults": [
+                            "enableAcceleratedNetworking",
+                            "enableIpForwarding",
+                            "name"
+                        ],
+                        "enableAcceleratedNetworking": false,
+                        "enableIpForwarding": false,
+                        "ipConfigurations": [
+                            {
+                                "__defaults": [
+                                    "privateIpAddressVersion"
+                                ],
+                                "name": "test",
+                                "privateIpAddressAllocation": "Dynamic",
+                                "privateIpAddressVersion": "IPv4",
+                                "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/publicIPAddresses/westus208a6279b",
+                                "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/virtualNetworks/westus236f8b6d8/subnets/westus21881f317"
+                            }
+                        ],
+                        "location": "westus2",
+                        "name": "westus2f35a94dc",
+                        "resourceGroupName": "fredwestus2bce78be9"
+                    },
+                    "outputs": {
+                        "appliedDnsServers": [],
+                        "dnsServers": [],
+                        "enableAcceleratedNetworking": false,
+                        "enableIpForwarding": false,
+                        "id": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/networkInterfaces/westus2f35a94dc",
+                        "internalDnsNameLabel": "",
+                        "internalFqdn": "",
+                        "ipConfigurations": [
+                            {
+                                "applicationGatewayBackendAddressPoolsIds": [],
+                                "applicationSecurityGroupIds": [],
+                                "loadBalancerBackendAddressPoolsIds": [],
+                                "loadBalancerInboundNatRulesIds": [],
+                                "name": "test",
+                                "primary": true,
+                                "privateIpAddress": "",
+                                "privateIpAddressAllocation": "dynamic",
+                                "privateIpAddressVersion": "IPv4",
+                                "publicIpAddressId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/publicIPAddresses/westus208a6279b",
+                                "subnetId": "/subscriptions/ba0583bb-4130-4d7b-bfe4-0c7597857323/resourceGroups/fredwestus2bce78be9/providers/Microsoft.Network/virtualNetworks/westus236f8b6d8/subnets/westus21881f317"
+                            }
+                        ],
+                        "location": "westus2",
+                        "macAddress": "",
+                        "name": "westus2f35a94dc",
+                        "networkSecurityGroupId": "",
+                        "privateIpAddress": "10.0.2.4",
+                        "privateIpAddresses": [
+                            "10.0.2.4"
+                        ],
+                        "resourceGroupName": "fredwestus2bce78be9",
+                        "tags": {}
+                    },
+                    "parent": "urn:pulumi:dev::test::pulumi:pulumi:Stack::test-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2",
+                        "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::westus2",
+                        "urn:pulumi:dev::test::azure:network/subnet:Subnet::westus2"
+                    ],
+                    "provider": "urn:pulumi:dev::test::pulumi:providers:azure::default::3119fea8-9cdf-43ae-9131-9b490559618f",
+                    "propertyDependencies": {
+                        "ipConfigurations": [
+                            "urn:pulumi:dev::test::azure:network/subnet:Subnet::westus2",
+                            "urn:pulumi:dev::test::azure:network/publicIp:PublicIp::westus2"
+                        ],
+                        "location": [
+                            "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                        ],
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::test::azure:core/resourceGroup:ResourceGroup::fredwestus2"
+                        ]
+                    }
+                },
+                "type": "deleting"
+            }
+        ]
+    }
+}
