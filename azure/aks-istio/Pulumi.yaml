@@ -1,0 +1,10 @@
+name: aks-istio
+runtime: nodejs
+description: Run Istio on AKS
+template:
+  config:
+    password:
+      description: Your cluster password
+      secret: true
+    sshPublicKey:
+      description: Your SSH public key (generate with `ssh-keygen -t rsa -f key.rsa`)
